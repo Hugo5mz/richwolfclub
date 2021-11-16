@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wolf Fat Club</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/timeline.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/faqs.css">
+
+    
+
+
+</head>
+<body>
+
+  <header>
+
+    <div class="desplegable">
+      <div class=" onclick="showNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="links">
+        <div class="link">
+          <a href="#">ABOUT</a>
+        </div>
+        <div class="link">
+          <a href="#">ROADMAP</a>
+        </div>
+
+        <div class="link">
+          <a href="#">FAQ</a>
+        </div>
+        <div class="link">
+          <a href="#">TEAM</a>
+        </div>
+      </div>
+    </div>
+
+
+  </header>
+
+
+    <header>
+        <img class="logo" src="/img/logo.png" alt="">
+        <ul>       
+            <div class="toggle ham-btn" onclick="showNav()"></div>
+            <li><a href="https://discord.gg/GX7Qvxqs" class="active">JOIN DISCORD</a></li>
+        </ul>
+        
+    </header>
+
+    <section>
+
+
+
+        <img src="/img/stars.png" alt="stars" id="stars">
+        <img src="/img/moon.png" alt="moon" id="moon">
+        <img src="/img/mountains_behind.png" alt="mountains" id="mountains_behind">
+        <img src="/img/mountains_front.png" alt="mountain" id="mountains_front">
+
+    </section>
+
+
+<div class="sec">
+
+  <h2>WELCOME!</h2>
+  <p> Welcome to Rich Wolf Club, un club de 9.999 rich wolves que les gusta mucho el dinero y gastarlo en cosas caras. <br> <br>
+
+    Hace años los lobos ricos vivían en manada en un (bosque)
+    Sin embargo uno de ellos decidió que ya no quería tener una vida tan simple, se fue a vivir a (Historia WSTW) y empezó a amasar una gran fortuna, llamó a su manada para que fueran con él y mejoraran su vida, la mayoría no quisieron creerlo y solo 9 de ellos decidieron seguirle.
+    Ahora esos 9990 lobos que se quedaron en (el bosque) están en peligro de extinción por culpa de los cazadores furtivos. <br> <br>
+    Los 10 lobos billonarios han decidido luchar por sus hermanos de manada, con el objetivo de llevarlos a (WSTW) ponerlos a salvo y liarla gastando todo el dinero en fiestas y diversión.
+    </p>
+    <br> <br>
+    <br> <br>
+  <h2>BILLIONAIRE WOLVES</h2>
+  <p> Los Lobos Billonarios son los 10 lobos que se fueron a (WSTW) y han decidido salvar a sus hermanos y ayudarles a tener mejor vida. Cada propietario de esos raros NFT de lobos billonarios serán recompensados con un bono de 10000 $. Una vez que los rich Wolf se agoten, el propietario del Billionaire ST Wolf ganara un lamborghini Urus.
+
+  </p>
+
+  <br> <br>
+
+
+
+</div>
+
+
+<!-- Sección de Timeline -->
+
+<div class="intro">
+  <div class="hugo">
+    <h1>ROADMAP</h1>
+  </div>
+
+
+  <div class="timeline">
+    <ul>
+      <li>
+        <div>
+          <time>10% - Welcome to club</time> Toma asiento, charla con otros lobos y disfruta. Sortearemos 5/10 rich wolf una vez alcancemos 20000 miembros en discord.
+        </div>
+      </li>
+      <li>
+        <div>
+          <time>25% - Sin definir</time> Los poseedores de Rich Wolf serán recompensados como agradecimiento por formar parte del proyecto. El 10/15 % de las comisiones de venta en el mercado secundario, se destinarán a garantizar la longevidad del proyecto a través de campañas de marketing.
+        </div>
+      </li>
+      <li>
+        <div>
+          <time>50% - Sin definir</time> Lanzamiento de la colección de merchandising Rich Wolf, con opción de tener tu rich wolf impreso en 3D o impreso en el merchandising + SORTEO de 5/10 Rich Wolf impresos en 3D.
+        </div>
+      </li>
+      <li>
+        <div>
+          <time>75% - Sin definir</time> Un total de 10/15 Rich Wolf, incluido un Billionarie Wolf, se sortearán entre todos los poseedores de Rich Wolf.
+        </div>
+      </li>
+      <li>
+        <div>
+          <time>100% - Sin definir</time> Creación de todos los Rich Wolf en formato digital 3D.
+        </div>
+      </li>
+      <li>
+        <div>
+          <time>101% - Meta</time> Cerrar acuerdos con otros proyectos para implementar los Rich Wolf como SKIN dentro de los metaversos para los poseedores de Rich Wolf.
+  
+
+    </ul>
+  </div>
+ 
+<!-- Modelo 3D -->
+
+
+
+<div class="modelo">
+  <h1>3D MODEL</h1>
+  <div class="modelo__img">
+
+
+    <model-viewer
+      id="modelViewer"
+      src="src/Astronaut.glb"
+      alt="Model Viewer example"
+      poster="src/poster-astronaut.png"
+      camera-controls
+      camera-orbit="-65deg 55deg 3.5m"
+      auto-rotate
+    ></model-viewer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"
+    ></script>
+
+  </div>
+</div>
+
+
+<!-- Development Roadmap -->
+
+  <div class="dev">
+    
+    <h1>Development Roadmap</h1>
+
+    <div class="dev__info">
+
+      <h2>Marketing Campaigns <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, illum, dolores recusandae iste delectus commodi quisquam dicta quasi nostrum officia sint voluptate ab nulla beatae? Consequuntur veritatis distinctio sit impedit!</span></h2>
+      
+      <hr size="2px" color="white" />
+
+      <h2>Marketing Campaigns <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, illum, dolores recusandae iste delectus commodi quisquam dicta quasi nostrum officia sint voluptate ab nulla beatae? Consequuntur veritatis distinctio sit impedit!</span></h2>
+      
+      <hr size="2px" color="white" />
+
+      <h2>Marketing Campaigns <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, illum, dolores recusandae iste delectus commodi quisquam dicta quasi nostrum officia sint voluptate ab nulla beatae? Consequuntur veritatis distinctio sit impedit!</span></h2>
+      
+      <hr size="2px" color="white" />
+
+      <h2>Marketing Campaigns <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, illum, dolores recusandae iste delectus commodi quisquam dicta quasi nostrum officia sint voluptate ab nulla beatae? Consequuntur veritatis distinctio sit impedit!</span></h2>
+      
+      <hr size="2px" color="white" />
+
+      <h2>Marketing Campaigns <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, illum, dolores recusandae iste delectus commodi quisquam dicta quasi nostrum officia sint voluptate ab nulla beatae? Consequuntur veritatis distinctio sit impedit!</span></h2>
+      
+      <hr size="2px" color="white" />
+
+    </div>
+    
+
+
+
+  </div>
+
+
+
+<!-- FAQS -->
+
+<div class="modelo">
+  <h1>FAQS</h1>
+</div>
+<div class="c">
+  <input type="checkbox" id="faq-1">
+  <h1><label for="faq-1">How much is a Rich Wolf NFT ?</label></h1>
+  <div class="p">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit commodi ad eligendi necessitatibus iusto natus voluptatibus amet laborum optio! Fuga laudantium quisquam rerum accusantium error voluptate dignissimos reprehenderit officia cum.</p>
+  </div>
+</div>
+<div class="c">
+  <input type="checkbox" id="faq-2">
+  <h1><label for="faq-2">Where can I view my Rich Wolf NFT’S ?</label></h1>
+  <div class="p">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus quod debitis numquam sit porro deleniti obcaecati fugit ratione modi quisquam! Officia, id. Dicta sit architecto similique temporibus aspernatur a quia.</p>
+  </div>
+</div>
+<div class="c">
+  <input type="checkbox" id="faq-3">
+  <h1><label for="faq-3">Will there be a Presale ?</label></h1>
+  <div class="p">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, impedit maxime. Debitis recusandae corporis excepturi facere vel accusamus? Quia perferendis soluta sint consectetur labore voluptatem expedita sed dignissimos harum atque.
+    </p>
+  </div>
+</div>
+<div class="c">
+  <input type="checkbox" id="faq-3">
+  <h1><label for="faq-3">When will we be able to mint Rich Wolves ?</label></h1>
+  <div class="p">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, impedit maxime. Debitis recusandae corporis excepturi facere vel accusamus? Quia perferendis soluta sint consectetur labore voluptatem expedita sed dignissimos harum atque.
+    </p>
+  </div>
+</div>
+<div class="c">
+  <input type="checkbox" id="faq-3">
+  <h1><label for="faq-3">What can I do with my Rich Wolf ?</label></h1>
+  <div class="p">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, impedit maxime. Debitis recusandae corporis excepturi facere vel accusamus? Quia perferendis soluta sint consectetur labore voluptatem expedita sed dignissimos harum atque.
+    </p>
+  </div>
+</div>
+<div class="c">
+  <input type="checkbox" id="faq-3">
+  <h1><label for="faq-3">Are there secondary sale royalties ?</label></h1>
+  <div class="p">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, impedit maxime. Debitis recusandae corporis excepturi facere vel accusamus? Quia perferendis soluta sint consectetur labore voluptatem expedita sed dignissimos harum atque.
+    </p>
+  </div>
+</div>
+<div class="c">
+  <input type="checkbox" id="faq-3">
+  <h1><label for="faq-3">Do I own the Rich Wolf after minting it ?</label></h1>
+  <div class="p">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, impedit maxime. Debitis recusandae corporis excepturi facere vel accusamus? Quia perferendis soluta sint consectetur labore voluptatem expedita sed dignissimos harum atque.
+    </p>
+  </div>
+</div>
+
+<!-- Sección TEAM-->
+
+  <h1 class="team">TEAM</h1>
+
+<!-- Persona 1 -->
+
+<div class="container">
+  <div class="card">
+      <div class="content">
+        <div class="imgBx"><img src="/img/fernando.png" alt="fernando"></div>
+        <div class="contentBx">
+          <h3>Lobo jefe <br><span>Jefe de Marketing</span></h3>
+</div>
+</div>
+</div>
+
+  <!-- Persona 2 -->
+
+    <div class="card">
+      <div class="content">
+        <div class="imgBx"><img src="/img/areces.png" alt="fernando"></div>
+        <div class="contentBx">
+          <h3>LOBO FEO <br><span>Gestión de Recursos</span></h3>
+</div>
+</div>
+</div>
+
+  <!-- Persona 3  -->
+
+  <div class="card">
+    <div class="content">
+      <div class="imgBx"><img src="/img/canita.png" alt="fernando"></div>
+      <div class="contentBx">
+        <h3>Lobo Diseñador <br><span>Jefe de Diseño</span></h3>
+
+</div>
+</div>
+</div>
+
+
+<!-- Persona 4 -->
+
+    <div class="card">
+      <div class="content">
+        <div class="imgBx"><img src="/img/torrente.png" alt="fernando"></div>
+        <div class="contentBx">
+          <h3>Lobo Hacker <br><span>Jefe de Programación</span></h3>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Footer -->
+
+<footer>
+
+  <div class="wave">
+    <div class="wave" id="wave1"></div>
+    <div class="wave" id="wave2"></div>
+    <div class="wave" id="wave3"></div>
+    <div class="wave" id="wave4"></div>
+  </div>
+
+  <ul class="social_icon">
+    <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+    <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+    <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></ion-icon></a></li>
+    <li><a href="#"><ion-icon name="logo-discord"></ion-icon></ion-icon></a></li>
+  </ul>
+
+  <ul class="menu_footer">
+    <li><a href="#">About</a></li>
+    <li><a href="#">RoadMap</a></li>
+    <li><a href="#">FAQ</a></li>
+    <li><a href="#">Team</a></li>
+  </ul>
+
+  <p>© 2021 Wolf Rich Club | All Rights Reserved</p>
+
+</footer>
+
+<!-- Iconos Script -->
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<!-- Header Animación -->
+
+<script>
+
+  let stars = document.getElementById('stars');
+  let moon = document.getElementById('moon');
+  let mountains_behind = document.getElementById('mountains_behind');
+  let mountains_front = document.getElementById('mountains_front');
+
+  window.addEventListener('scroll', function(){ 
+    let value = window.scrollY;
+    stars.style.left = value * 0.25 + 'px';
+    moon.style.top = value * 0.95 + 'px';
+    mountains_behind.style.top = value * 0.5 + 'px';
+    mountains_front.style.top = value * 0 + 'px';
+    
+
+
+  })
+
+</script>
+
+
+<script>
+
+  (function () {
+    "use strict";
+  
+    // define variables
+    var items = document.querySelectorAll(".timeline li");
+  
+    // check if an element is in viewport
+    // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
+    function isElementInViewport(el) {
+      var rect = el.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <=
+          (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    }
+  
+    function callbackFunc() {
+      for (var i = 0; i < items.length; i++) {
+        if (isElementInViewport(items[i])) {
+          items[i].classList.add("in-view");
+        }
+      }
+    }
+  
+    // listen for events
+    window.addEventListener("load", callbackFunc);
+    window.addEventListener("resize", callbackFunc);
+    window.addEventListener("scroll", callbackFunc);
+  })();
+  
+  
+  
+  </script>
+
+<script>
+
+
+
+  function showNav(){
+    document.getElementsByClassName("desplegable")[0].classList.toggle("active");
+  }
+  
+  
+  
+  </script>
+
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+
+
+
+</body>
+</html>
