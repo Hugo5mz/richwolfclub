@@ -70,7 +70,7 @@ header ul li a:hover {
 
 .hamburger.active {
 
-  background:url(/img/close.png);
+  background:url(img/close.png);
   background-size: 25px;
   background-repeat: no-repeat;
   background-position: center;
@@ -85,7 +85,7 @@ header ul li a:hover {
   height: 200px;
   padding-right: 30px;
   display: flex;
-  background:url(/img/menu.png);
+  background:url(img/menu.png);
   background-size: 50px;
   background-repeat: no-repeat;
   background-position: center;
