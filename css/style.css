@@ -104,7 +104,7 @@ header ul li a:hover {
 
 .toggle.active {
 
-    background:url(/img/close.png);
+    background:url(img/close.png);
     background-size: 25px;
     background-repeat: no-repeat;
     background-position: center;
