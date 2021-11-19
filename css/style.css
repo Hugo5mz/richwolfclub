@@ -1,0 +1,442 @@
+/* Ajustes de REM (NO TOCAR) */
+
+html { font-size: 62.5%; }
+
+body { font-size: 16px; }
+
+/* Configuración general */
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+    
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(#020536,#111111);
+
+}
+
+h1 { font-size: 3.8rem; color: white; font-weight: 1000; font: 300;}
+
+h2 { font-size: 2.8rem; color: white; }
+
+h3 { font-size: 1.8rem; color: white;}
+
+h1,h2,h3 { text-align: center;}
+
+p { font-size: 1.5rem;}
+
+
+/* Atajos */
+
+:root {
+
+    --primario: #9C27B0;
+    --primarioOcuro: #89119D;
+    --secundario: #FFCE00;
+    --SecundarioOscuro: rgb(233,287,2);
+    --blanco: #FFF;
+    --negro: #000;
+
+    --fuenteprincipal: font-family: 'Staatliches', cursive;
+
+}
+
+
+
+
+
+/* Header */
+
+section {
+
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    overflow: hidden;
+
+}
+
+section::before {
+
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #111111, transparent);
+    z-index: 1000;
+    bottom: 0px;
+    left: 0;
+
+}
+
+section img {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+
+}
+
+section img#moon {
+
+    mix-blend-mode: screen;
+
+}
+
+section img#mountain_2 {
+
+    z-index: 100;
+
+}
+
+
+
+/* Welcome */
+
+.welcome {
+
+    position: relative;
+    padding: 100px;
+    background: #111111;
+    margin-bottom: 0;
+    padding-top: 150px;
+    padding-bottom: 100px;
+
+}
+
+
+
+.welcome p {
+
+    margin-top: 50px;
+    margin-left: 500px;
+    margin-right: 500px;
+    font-size: 1.2em;
+    color: #fff;
+    text-align: left;
+
+
+}
+
+
+
+
+/* Footer */
+
+footer {
+
+    position: relative;
+    width: 100%;
+    background: rgb(30, 84, 184);
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+footer .social_icon,
+.menu_footer {
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+
+}
+
+
+footer .social_icon li,
+footer .menu_footer li {
+
+    list-style: none;
+
+}
+
+footer .social_icon li a {
+
+    padding-top: 50px;
+    font-size: 2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+
+}
+
+footer .social_icon li a:hover {
+
+    transform: translateY(-10px);
+
+}
+
+footer .menu_footer li a {
+
+    font-size: 1.2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.75;
+
+}
+
+footer .menu_footer li a:hover {
+
+    opacity: 1;
+
+}
+
+footer p {
+
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+
+}
+
+
+/* TEAM */
+
+
+.container {
+
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 0;
+    padding: 60px 0 100px 0;
+    background: #111111;
+
+}
+
+.container .card {
+
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.05);
+    margin: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container .card .content {
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.5;
+    transition: 0.5s;
+
+}
+
+.container .card:hover .content {
+
+    opacity: 1;
+    transform: translateY(-20px);
+
+}
+
+.container .card .content .imgBx {
+
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid rgba(0, 0, 0, 0.25);
+}
+
+.container .card .content .imgBx img {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.container .card .content .contentBx h3 {
+
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 10px;
+    line-height: 1.1em;
+
+}
+
+.container .card .content .contentBx span {
+
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: initial;
+
+}
+
+.container .card .sci {
+
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+
+
+}
+
+.container .card .sci li {
+
+    list-style: none;
+    margin: 0 10px;
+    transform: translateY(120px);
+    transition: 0.5s;
+    opacity: 0;
+    transition-delay: calc(0.1s * var(--i));
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+
+}
+
+.container .card:hover .sci li {
+
+    transform: translateY(110px);
+    opacity: 1;
+
+}
+
+.container .card .sci li a 
+ {
+
+  color: #fff;
+  font-size: 24px;  
+
+}
+
+.team {
+
+    padding-top: 150px;
+    background: #111111;
+    color: #fff;
+    text-align:center;
+    font-size: 90px;
+
+}
+
+
+.modelo{
+
+    background: #111111;
+    padding: 100px 0;
+
+}
+
+.modelo h1 {
+
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+.modelo model-viewer {
+
+    padding-top: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 750px;
+    height: 750px;
+
+}
+
+/* Development Roadmap*/
+
+.dev {
+
+    height: 100%;
+    width: 100%;
+    padding: 100px 300px;
+    color: #fff;
+
+}
+
+.dev h1 {
+
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 300px;
+
+
+}
+
+.dev__info h2 span {
+
+
+    height: 100px;
+    padding-left: 200px;
+
+}
+
+.dev__info h2 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 150px;
+
+}
+
+.dev__info span {
+
+    display: flex;
+    justify-content: right;
+    text-align: right;
+    padding-right: 150px;
+    font-size: 1.7rem;
+    font: 900;
+
+}
+
+.dev__info hr {
+
+    margin: 50px 0;
+
+}
