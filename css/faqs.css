@@ -1,0 +1,64 @@
+div.c{
+  position: relative;
+  margin: 30px 300px;
+  
+}
+.c input{
+
+  position: absolute;
+  left: 100px;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity:0;
+  visibility: 0;
+
+}
+.c h1{
+  background:rgb(29, 29, 29);
+  color:white;
+  padding: 0.5em 1em;
+  position: relative;
+  font-size: 3rem;
+  text-transform: uppercase;
+  border-radius: 10px;
+}
+.c label::before{
+  content:"";
+  display: inline-block;
+  border: 15px solid transparent;
+  border-left: 15px solid white;
+}
+.c label{
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.c .p{
+  max-height:0px;
+  overflow: hidden;
+  transition: max-height 0.5s;
+  color: rgb(207, 207, 207);
+  font-size: 20rem;
+  background-color: rgb(46, 46, 46);
+  box-shadow:0 0 10px 0 rgba(66, 66, 66, 0.2);
+}
+.c .p p {
+  
+  align-items: center;
+  justify-content: center;
+  padding:2em;
+}
+.c input:checked ~ h1 label::before{
+  border-left:15px solid transparent;
+  border-top:20px solid rgb(201, 201, 201);
+  margin-top:12px;
+  margin-right:10px;
+}
+.c input:checked ~ h1 ~ div.p{
+  max-height:100px;
+}
+.c a{
+  color:steelblue;
+}
