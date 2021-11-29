@@ -48,6 +48,11 @@
 
 @media (max-width: 600px) {
     
+    .welcome {
+        
+        margin-top: -50px;
+        
+    
     .welcome h1 {
 
         font-size: 2rem;
@@ -56,6 +61,7 @@
     }
     .welcome p {
 
+        margin: 100 auto;
         font-size: 1.5rem;
 
     }
