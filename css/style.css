@@ -483,10 +483,10 @@ footer p {
 
 }
 
-.sketchfab-embed-wrapper {
+iframe {
 
-    margin: 50px 0;
     width: 800px;
     height: 800px;
-
+    display: block;
+    margin: 100px auto;
 }
