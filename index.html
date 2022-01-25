@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rich Wolf Club</title>
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mq.css">
+
+    <!-- JS SETTINGS -->
+    <script src="js/counterdown_clock.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/load.js"></script>
+
+    <!-- FONT STYLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- ANIMATION CONFIG-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css'>
+
+
+</head>
+<body>
+
+  
+
+<!-- NAVBAR SECTION -->
+
+  <div class="navbar" data-aos="zoom-in-right">
+
+
+    <a href="#start"><img href="#start" class="logo" src="img/logo.png" alt="logo wolf"></a>
+    <ul class="navbar__menu">
+      <li class="navbar__home"><a>HOME</a></li>
+      <li class="navbar__welcome"><a>WELCOME</a></li>
+      <li class="navbar__roadmap"><a>ROADMAP</a></li>
+      <li class="navbar__team"><a>TEAM</a></li>
+    </ul>
+    <ul class="navbar__discord">
+      <li><img src="img/discord.png" alt=""></li>
+      <li><a href="https://discord.gg/2EcuEACJ9h" class="active">DISCORD</a></li>
+    </ul> 
+
+  </div>
+  
+<!-- LOADPAGE -->
+
+
+<!-- HEADER SECTION -->  
+
+  <section id="start" data-aos="zoom-in-right">
+
+    <img src="img/stars.png" alt="stars" >
+    <img src="img/NFTMarketing12.png" alt="moon" >
+    <img src="img/" alt="mountains" >
+    <img src="img/mountain_2.png" alt="mountain" >
+
+    <h1 class="tittle__1">RICH WOLF</h1>
+    <h1 class="tittle__2">CLUB</h1>
+    
+  </section>
+
+<!-- Welcome -->
+
+<div class="welcome">
+
+  <div class="welcome__home">
+    <img src="img/WELCOME.png" alt="">
+    <h1>TO THE CAVE OF THE WOLF</h1>
+    <p>Welcome to Rich Wolf Club, un club de 9.999 rich wolves que les gusta mucho el dinero y gastarlo en cosas caras.
+
+      Hace años los lobos ricos vivían en manada en un (bosque)
+      Sin embargo uno de ellos decidió que ya no quería tener una vida tan simple, se fue a vivir a Long Island y empezó a amasar una gran fortuna, llamó a su manada para que fueran con él y mejoraran su vida, la mayoría no quisieron creerlo y solo 9 de ellos decidieron seguirle.
+      Ahora esos 9990 lobos que se quedaron en (el bosque) están en peligro de extinción por culpa de los cazadores furtivos.
+      Los 10 lobos billonarios han decidido luchar por sus hermanos de manada, con el objetivo de llevarlos a Wall Street y liarla gastando todo el dinero en fiestas y diversión.
+      </p>
+  </div>
+
+  <div class="welcome__billonaire">
+    <img src="img/BILLIONAIRE.png" alt="">
+    <h1>BILLIONAIRE WOLVES</h1>    
+    <p>Los Lobos Billonarios son los 10 lobos que se fueron a (WSTW) y han decidido salvar a sus hermanos y ayudarles a tener mejor vida. Cada propietario de esos raros NFT de lobos billonarios serán recompensados con un bono de 10000 $. Una vez que los rich Wolf se agoten, el propietario del Billionaire ST Wolf ganara un lamborghini Urus.</p>
+  </div>
+
+</div>
+
+
+
+
+<!-- SECTION ROADMAP / DEV ROADMAP -->
+
+<div class="roadmap__section">
+
+  <img src="img/roadmapç.png" alt="roadmap">
+
+  <div class="botones_section">
+    <button id="mostrarpremioboton" class="boton_1 learn-more" onclick="mostrarpremio();">Roadmap</button>
+    <button id="ocultarpremioboton " class="boton_2 learn-more" href="javascript:void(0);" onclick="ocultarpremio();">Dev. Roadmap</button>
+  </div>
+ 
+
+  <div id="premio"> 
+
+    <div class="history-tl-container">
+      <ul class="tl">
+        <li id="color__1" class="tl-item" ng-repeat="item in retailer_history">
+          <div class="timestamp" style="color: #71acd5;">
+          10%<br>
+          </div>
+          <div class="item-title">Welcome to the club</div>
+          <div class="item-detail">Take a seat, chat with other wolves and enjoy. We will give away 5/10 rich wolf once we reach 20,000 members in discord.</div>
+        </li>
+        <li id="color__2" class="tl-item" ng-repeat="item in retailer_history">
+          <div class="timestamp" style="color: #68c07b;">
+            25%<br> 
+          </div>
+          <div class="item-title">Decide name</div>
+          <div class="item-detail">Rich Wolf owners will be rewarded as a thank you for being part of the project. 10/15% of the sales commissions in the secondary market will be used to guarantee the longevity of the project through marketing campaigns.</div>
+        </li>
+        <li id="color__3" class="tl-item" ng-repeat="item in retailer_history">
+          <div class="timestamp" style="color: #d0d48a;">
+            50%<br> 
+          </div>
+          <div class="item-title">Decide name</div>
+          <div class="item-detail">Launch of the Rich Wolf merchandising collection, with the option of having your own rich wolf printed in 3D or printed in merchandising + GIVEAWAY 5/10 Rich Wolf 3D printed .</div>
+        </li>
+        <li id="color__4" class="tl-item" ng-repeat="item in retailer_history">
+          <div class="timestamp" style="color: #e9c585;">
+            75%<br> 
+          </div>
+          <div class="item-title">Decide name</div>
+          <div class="item-detail">A total of 10/15 Rich Wolf, including a Billionaire Wolf, will be raffled off among all Rich Wolf holders Wolf.</div>
+        </li>
+        <li id="color__5" class="tl-item" ng-repeat="item in retailer_history">
+          <div class="timestamp" style="color: #c06f6f;">
+            100%<br> 
+          </div>
+          <div class="item-title">Decide name</div>
+          <div class="item-detail">Creation of all Rich Wolf in 3D digital format.</div>
+        </li>
+        <li id="color__6" class="tl-item" ng-repeat="item in retailer_history">
+          <div class="timestamp" style="color: #ae6ca9;">
+            101%<br> 
+          </div>
+          <div class="item-title">GOAL</div>
+          <div class="item-detail">Close agreements with other projects to implement Rich Wolf as SKIN within metaverses for Rich Wolf holders.</div>
+        </li>
+    
+      </ul>
+    
+    </div>
+
+  </div>
+
+  
+
+  <div id="triste">
+    <div class="history-tl-container">
+      <ul class="tl">
+        <p>Our goal is that your investment is the most profitable. For this we will use several strategies at the end of the launch in order to increase the floor price of the Rich Wolf.
+          IN TABLE
+          </p>
+        <li id="color__1" class="tl-item" ng-repeat="item in retailer_history">
+          <div class="timestamp" style="color: #71acd5;">
+          10%<br>
+          </div>
+          <div class="item-title">Marketing Campaigns</div>
+          <div class="item-detail">Once the initial investment of more than $ 100,000 is made in publicizing the project, we will continue to invest in aggressive marketing campaigns through influencers and content creators related to NFTs. At RWC we want your wolves to endure in time like legends. To achieve this, the best thing is to not stop carrying out marketing campaigns.</div>
+        </li>
+        <li id="color__2" class="tl-item" ng-repeat="item in retailer_history">
+          <div class="timestamp" style="color: #68c07b;">
+            25%<br> 
+          </div>
+          <div class="item-title">Holders</div>
+          <div class="item-detail">Once all the Wolves have been sold X% of the sales transactions will go to the project holders.          </div>
+        </li>
+        <li id="color__3" class="tl-item" ng-repeat="item in retailer_history">
+          <div class="timestamp" style="color: #d0d48a;">
+            50%<br> 
+          </div>
+          <div class="item-title">The importance of the community</div>
+          <div class="item-detail">At Rich Wolf Club we know the importance of creating a healthy community in harmony with the project, that is why we will make periodic surveys to ensure the prosperity of the project.</div>
+        </li>
+        <li id="color__4" class="tl-item" ng-repeat="item in retailer_history">
+          <div class="timestamp" style="color: #e9c585;">
+            75%<br> 
+          </div>
+          <div class="item-title">Metaverse implementation</div>
+          <div class="item-detail">The objective of RWC is clear, we want an identity inside of the metaverse, for this we will close contracts with the most notorious metaverse development companies, so you can proudly show that you belong to this club.</div>
+        </li>
+        <li id="color__5" class="tl-item" ng-repeat="item in retailer_history">
+          <div class="timestamp" style="color: #c06f6f;">
+            100%<br> 
+          </div>
+          <div class="item-title">Event</div>
+          <div class="item-detail">As in the movie, we will launch dwarfs (covered by social security) from about 10 meters (32.8 feet). The prize will be to take the dwarf home and use him as a slave throughout his life (It is his contract).</div>
+        </li>
+    
+      </ul>
+    
+    </div>
+  </div>
+
+</div>
+
+<script> 
+
+  function mostrarpremio() {
+    document.getElementById('premio').style.display = 'block';
+    document.getElementById('triste').style.display = 'none';
+    document.getElementById('mostrarpremioboton').style.backgroundImage = 'url()';
+    document.getElementById('ocultarpremioboton').style.backgroundImage = 'url()';
+
+  }
+
+  function ocultarpremio() {
+    document.getElementById('premio').style.display = 'none';
+    document.getElementById('triste').style.display = 'block';
+    document.getElementById('mostrarpremioboton').style.backgroundImage = 'url(/img/)';
+    document.getElementById('ocultarpremioboton').style.backgroundImage = 'url(/img/)';
+
+  }
+
+</script>
+
+
+<!-- Modelo 3D -->
+
+<div class="modelo" id="3d_model">
+    <h1 data-aos="zoom-in-up"
+    data-aos-anchor-placement="top-center"></h1>
+    <div class="modelo__img">
+  
+      <model-viewer
+        id="modelViewer"
+        src="img/WallStreetDefinitive.glb"
+        alt="Model Viewer example"
+        poster="src/poster-astronaut.png"
+        camera-controls
+        camera-orbit="-65deg 55deg 3.5m"
+        auto-rotate
+        data-aos="zoom-in-up"></model-viewer>
+  
+      <script
+        type="module"
+        src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+      ></script>
+      <script
+        nomodule
+        src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"
+      ></script> 
+  
+    </div>
+
+
+  <!-- WHY BUY -->
+
+  <div class="buy">
+
+    <img src="img/buy.png" alt="">ç
+
+    <h1>LEARN MORE ABOUT THE CRYPTOCURRENCY SECTOR</h1>
+
+    <p>Rich Wolf Club has the advice of multiple expert investors in the cryptocurrency sector, all holders of at least one Rich Wolf will have access to both a private channel in which everyone can comment on any related project in the investment sector and request the opinion of the rest of investors and experts.
+      <br></br>
+      In addition to access to a course and a collection of books on the crypto sector, with which you can learn to study projects, read a graph and much more.
+      </p>
+
+
+  <h1>RECEIVE PASSIVE EARNINGS</h1>
+
+  <p>Rich Wolf Club is not just another NFT project, RWC will become the # 1 company in creating 3D models for skin.
+<br></br>
+    RWC will help new projects to launch their supported collection of 3D models so that each owner can have the skin of their favorite NFT within their preferred metaverse, we will also create the 3D models of projects already launched successfully.
+    <br></br>
+    All the holders of a Rich Wolf will receive a percentage of the net profits of the company on a quarterly basis, the holders of the collection will receive 30% of the profits to be distributed among the 9999 Rich Wolf, in such a way that the holders of the project will not They need to sell their assets to benefit economically and thus increase the collection's ground price.</p>
+  </div>
+
+
+
+
+  <!-- FAQS -->
+  
+  <div class="faqs__menu">
+
+    <div class="accordion">
+      <h2 class="accordion__heading">FAQS</h2>
+    
+      <div class="accordion__item">
+        <button class="accordion__btn">
+    
+          <span class="accordion__caption"><i class="far fa-lightbulb"></i>¿Cuánto cuesta un Rich Wolf NFT?</span>
+          <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+        </button>
+    
+        <div class="accordion__content">
+          <p>La venta pública comienza el (XXX (fechas por especificar). El precio comienza en 0.3 ETH + gas durante 12 horas. Si la colección no se agota para entonces, el precio baja a 0.25 ETH + gas después de las primeras 12 horas. La colección aún no está agotada después de esas 24 horas, el resto de Rich Wolf se vende a 0.2 ETH + gas.
+          </p>
+        </div>
+      </div>
+    
+      <div class="accordion__item">
+        <button class="accordion__btn">
+    
+          <span class="accordion__caption"><i class="far fa-lightbulb"></i>¿Dónde puedo ver mis NFT de Rich Wolf?</span>
+          <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+        </button>
+    
+        <div class="accordion__content">
+          <p>Once you have minted a Rich Wolf NFT, you will be able to see it by connecting your crypto wallet to OpenSea.</p>
+        </div>
+      </div>
+    
+      <div class="accordion__item">
+        <button class="accordion__btn">
+    
+          <span class="accordion__caption"><i class="far fa-lightbulb"></i>¿Habrá una preventa?</span>
+          <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+        </button>
+    
+        <div class="accordion__content">
+          <p>Una vez que haya acuñado (MINTEADO) un Rich Wolf NFT, podrá verlo conectando su billetera criptográfica a OpenSea.
+          </p>
+        </div>
+      </div>
+    
+      <div class="accordion__item">
+        <button class="accordion__btn">
+    
+          <span class="accordion__caption"><i class="far fa-lightbulb"></i>¿Cuándo podremos acuñar (Mintear) Rich Wolves?</span>
+          <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+        </button>
+    
+        <div class="accordion__content">
+          <p>XXXXXXX Falta concretar fechas</p>
+        </div>
+      </div>
+    
+      <div class="accordion__item">
+        <button class="accordion__btn">
+    
+          <span class="accordion__caption"><i class="far fa-lightbulb"></i>¿Qué puedo hacer con mi Rich Wolf?</span>
+          <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+        </button>
+    
+        <div class="accordion__content">
+          <p>Puedes usar tu Rich Wolf como una imagen de perfil en línea, y también puedes vender tu Rich Wolf para obtener ganancias. Una vez que se han creado los diseños 3D y se han llegado a acuerdos con diferentes metaversos, también puedes usarlo como skin del metaverso.</p>
+        </div>
+      </div>
+
+      <div class="accordion__item">
+        <button class="accordion__btn">
+    
+          <span class="accordion__caption"><i class="far fa-lightbulb"></i>¿Hay regalías por venta secundaria?</span>
+          <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+        </button>
+    
+        <div class="accordion__content">
+          <p>Sí, pero somos uno de los pocos proyectos en los que solo pondremos el 5% y una parte de esas regalías se destinará a marketing, para que el proyecto siga creciendo.</p>
+        </div>
+      </div>
+
+      <div class="accordion__item">
+        <button class="accordion__btn">
+    
+          <span class="accordion__caption"><i class="far fa-lightbulb"></i>¿Soy dueño del Rich Wolf después de acuñarlo (Mintearlo)?</span>
+          <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+        </button>
+    
+        <div class="accordion__content">
+          <p>Sí, poseerás todas las propiedades intelectuales de Rich Wolf, lo que significa que puedes usarlas para crear y vender merchandising.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+
+// select all accordion items
+const accItems = document.querySelectorAll(".accordion__item");
+
+// add a click event for all items
+accItems.forEach((acc) => acc.addEventListener("click", toggleAcc));
+
+function toggleAcc() {
+  // remove active class from all items exept current item
+  accItems.forEach((item) => item != this ? item.classList.remove("accordion__item--active") : null
+  );
+
+  // toggle active class on current item
+  if (this.classList != "accordion__item--active") {
+    this.classList.toggle("accordion__item--active");
+  }
+}
+
+
+  </script>
+
+  <!-- Sección TEAM-->
+
+
+
+  <!-- Persona 1 -->
+
+  <div class="team">
+    <img src="img/TEAM.png" data-aos="zoom-in-up"></img>
+
+
+
+  <div class="container" id="team" data-aos="zoom-in-up">
+
+    <div class="card">
+        <div class="content" class="team_1">
+          <div class="imgBx"><img src="img/ceo.png" alt="fernando"></div>
+          <div class="contentBx">
+            <h3>Lobo jefe <br><span>Jefe de Marketing</span></h3>
+  </div>
+  </div>
+  </div>
+  
+    <!-- Persona 2 -->
+  
+      <div class="card" data-aos="zoom-in-up">
+        <div class="content" class="team_2">
+          <div class="imgBx"><img src="img/feo.png" alt="fernando"></div>
+          <div class="contentBx">
+            <h3>LOBO EXPERTO <br><span>Gestión de Recursos</span></h3>
+  </div>
+  </div>
+  </div>
+  
+    <!-- Persona 3  -->
+  
+    <div class="card" data-aos="zoom-in-up">
+      <div class="content" class="team_3">
+        <div class="imgBx"><img src="img/diseña.png" alt="fernando"></div>
+        <div class="contentBx">
+          <h3>Lobo Diseñador <br><span>Jefe de Diseño</span></h3>
+  
+  </div>
+  </div>
+    <ul class="sci">
+      <li class="--i:1">
+        <a href="https://www.artstation.com/albertcaminal"><i class="fab fa-artstation"></i></a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/albertcaminal_art/"><i class="fab fa-instagram"></i></i></a>
+      </li>
+    </ul>
+    
+  </div>
+  
+
+  
+  <!-- Persona 4 -->
+  
+      <div class="card" data-aos="zoom-in-up">
+        <div class="content" class="team_4">
+          <div class="imgBx"><img src="img/dev.png" alt="fernando"></div>
+          <div class="contentBx">
+            <h3>Lobo Hacker <br><span>Jefe de Programación</span></h3>
+  </div>
+  </div>
+  </div>
+  </div>
+
+
+</body>
+
+</div>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  <path fill="#274274" fill-opacity="1" d="M0,160L80,160C160,160,320,160,480,170.7C640,181,800,203,960,197.3C1120,192,1280,160,1360,144L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+</svg> 
+
+<!-- Footer -->
+
+<footer>
+  <ul class="social-icon">
+    <li>
+      <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+    </li>
+    <li>
+      <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+    </li>
+    <li>
+      <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+    </li>
+    <li>
+      <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+    </li>
+  </ul>
+  <ul class="menu">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Team</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+  <ul>
+    <p>&copy; 2022 Rich Wolf Club | All Right Reserved</p>
+  </ul>
+
+</footer>
+
+
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script>
+
+let stars = document.getElementById('stars');
+let moon = document.getElementById('moon');
+let mountains_behind = document.getElementById('mountain_1');
+let mountains_front = document.getElementById('mountain_2');
+
+window.addEventListener('scroll', function(){ 
+  let value = window.scrollY;
+  stars.style.left = value * 0.25 + 'px';
+  moon.style.top = value * 0.95 + 'px';
+  mountain_1.style.top = value * 0.5 + 'px';
+  mountain_2.style.top = value * 0 + 'px';
+  
+
+
+})
+
+  
+var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+
+
+
+$(window).on("load",function(){
+  $(".loader-wrapper").fadeOut("slow");
+});
+
+
+</script>
+
+<script  src="js/loadpage.js"></script>
+
+<!-- Iconos Script -->
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<!-- ANIMACIONES SECCIONES -->
+
+<script>
+    AOS.init();
+  </script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!-- SCRIPT LENGUAJE -->
+
+<script> 
+let el = $('.switch');
+let cur = el.find('.current');
+let options = el.find('.options li');
+let content = $('#content');
+
+// Open language dropdown panel
+
+el.on('click', function(e) {
+  el.addClass('show-options');
+  
+  setTimeout(function() {
+    el.addClass('anim-options');
+  }, 50);
+  
+  setTimeout(function() {
+    el.addClass('show-shadow');
+  }, 200);
+});
+
+
+// Close language dropdown panel
+
+options.on('click', function(e) {
+  e.stopPropagation();
+  el.removeClass('anim-options');
+  el.removeClass('show-shadow');
+  
+  let newLang = $(this).data('lang');
+  
+  cur.find('span').text(newLang);
+  content.attr('class', newLang);
+  
+  setLang(newLang);
+  
+  options.removeClass('selected');
+  $(this).addClass('selected');
+  
+  setTimeout(function() {
+    el.removeClass('show-options');
+  }, 600);
+});
+
+
+// Save selected options into Local Storage
+
+function getLang() {
+  let lang;
+  if (localStorage.getItem('currentLang') === null) {
+    lang = cur.find('span').text();
+  } else {
+    lang = JSON.parse(localStorage.getItem('currentLang')).toLowerCase();
+  }
+  
+  // console.log(lang);
+
+  cur.find('span').text(lang);
+  options.parent().find(`li[data-lang="${lang}"]`).addClass('selected');
+  
+  content.attr('class', lang);
+}
+
+getLang();
+
+function setLang(newLang) {
+    localStorage.setItem('currentLang', JSON.stringify(newLang).toLowerCase());
+  
+  content.attr('class', newLang);
+  
+  // console.log('New language is: ' + newLang);
+}
+
+</script>
+
+
+<!-- ROADMAP CONFIG -->
+
+
+<script>
+
+    (function () {
+      "use strict";
+      var items = document.querySelectorAll(".timeline li");
+  
+      function isElementInViewport(el) {
+        var rect = el.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <=
+            (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+      }
+    
+      function callbackFunc() {
+        for (var i = 0; i < items.length; i++) {
+          if (isElementInViewport(items[i])) {
+            items[i].classList.add("in-view");
+          }
+        }
+      }
+    
+      window.addEventListener("load", callbackFunc);
+      window.addEventListener("resize", callbackFunc);
+      window.addEventListener("scroll", callbackFunc);
+    })();
+  
+    </script>
+
+
+<!-- FAQ`S -->
+
+<script>
+var shows = document.querySelectorAll(".show");
+var infos = document.querySelectorAll(".info");
+var accordions = document.querySelectorAll(".accordion");
+
+for (let i = 0; i < shows.length; i++) {
+  shows[i].onclick = function() {
+    for (let j = 0; j < shows.length; j++) {
+      if (shows[j] != this) {
+        infos[j].classList.remove("reveal");
+        shows[j].innerHTML = "+";
+        accordions[j].classList.remove("radius");
+      }
+    }
+    accordions[i].classList.toggle("radius");
+    infos[i].classList.toggle("reveal");
+    if (infos[i].className.includes("reveal")) shows[i].innerHTML = "-";
+    else shows[i].innerHTML = "+";
+  };
+}
+
+</script>
+
+
+
+</html>
