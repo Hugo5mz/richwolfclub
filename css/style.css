@@ -267,7 +267,7 @@ section {
  }
 
 
-.welcome__billonaire img {
+.billonaire img {
 
 
   width: 800px;
@@ -275,7 +275,16 @@ section {
   margin-top: 500px;
   margin-right: 200px;
   display: flex;
+
   
+
+
+}
+
+.nft img {
+  width: 1200px;
+  margin-top: -1000px;
+  transform: translate(-46%, 0);
 
 
 }
@@ -296,8 +305,11 @@ section {
 
   color: #7c7979;
   margin-right: 200px;
+  margin-left: 450px;
   text-align: right;
-  padding-bottom: 400px;
+  padding-bottom: 0;
+
+  
 
 }
 
@@ -575,6 +587,7 @@ ul.tl p {
   font-size: 2rem;
   font-weight: 400;
   margin-bottom: 100px;
+  margin-top: -105px;
   color: #b7b7b7;
 
 }
@@ -740,17 +753,14 @@ ul.tl p {
 .container {
 
   position: relative;
-  z-index: 1;
+  z-index: 2;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   margin: 0 0;
-  padding: 60px 0 100px 0;
-  margin-bottom: -300px;
-  padding-top: 100px;
-  background: #111111;
-  padding-bottom: 300px;
+  padding: 60px 0 200px 0;
+  background: transparent;
 
 }
 
@@ -876,7 +886,6 @@ font-size: 24px;
   background: #111111;
   color: #fff;
   text-align:center;
-  margin-bottom: 0;
   margin-top: 250px;
 }
 
@@ -893,77 +902,44 @@ font-size: 24px;
 
 /* Footer */
 
+.footer_wolf {
+  background: black;
+  display: block;
+  margin-top: -40px;
 
-footer {
+}
 
-  display: flex;
+.footer__text h1{
+  padding: 100px 10px 0 0;
+} 
+
+.footer__text p {
+  text-align: center;
+}
+
+.footer__text img {
+  width: 800px;
+  transform: translate(96%, -69%);
+  margin-bottom: -580px;
+}
+
+.footer__icons ion-icon{
+  color: white;
+  height: 50px;
+  width: 50px;
+  transform: translate(2240%, -300%);
+  margin-bottom: -30px;
+
+}
+
+.pcw_pcw {
+  margin-right: 50px;
+}
+
+.footer__text {
+  display: block;
+  text-align: center;
   justify-content: center;
-  align-items: flex-end;
-  min-height: 100vh;
-  background: #333;
-  position: relative;
-  width: 100%;
-  min-height: 100px;
-  padding: 0 10px;
-  background: var(--tercero);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-top: -80px;
-
-}
-
-footer :is(.social-icon, .menu) {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px 0;
-  flex-wrap: wrap;
-}
-
-footer :is(.social-icon, .menu) li {
-  list-style: none;
-
-}
-
-footer .social-icon li a {
-  font-size: 2rem;
-  color: #fff;
-  margin: 0 10px;
-  /* 인라인 요소는 transform 안 됨 */
-  display: inline-block;
-  transition: 0.5s;
-}
-
-footer .social-icon li a:hover {
-  transform: translateY(-10px);
-}
-
-footer .menu li a {
-  font-size: 1.2rem;
-  color: #fff;
-  margin: 0 10px;
-  display: inline-block;
-  text-decoration: none;
-  opacity: 0.75;
-
-}
-
-footer .menu li a:hover {
-  opacity: 1;
-}
-
-footer p {
-  color: #fff;
-  text-align: left;
-  margin: 0 auto;
-  margin-bottom: 10px;
-  font-size: 1.3rem;
-  padding: 5px;
-
-
 }
 
 /* ===== Scrollbar CSS ===== */
