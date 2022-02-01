@@ -30,7 +30,6 @@
 
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css'>
 
-
 </head>
 <body>
 
@@ -272,28 +271,103 @@
 
   <!-- WHY BUY -->
 
-  <div class="buy">
+  <!-- partial:index.partial.html -->
+  <section class="banner__slider">
+    <div class="slider stick-dots">
+      <div class="slide">
+        <div class="slide__img">
+          <img src="" alt="" data-lazy="https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" class="full-image animated" data-animation-in="zoomInImage"/>
+        </div>
+        <div class="slide__content ">
+          <div class="slide__content--headings text-center">
+             
+             <p class="animated top-title" data-animation-in="fadeInUp" data-delay-in="0.3">Welcome to Shareat restaurant</p>
+            <h2 class="animated title" data-animation-in="fadeInUp">Let Enjoy The Rhym Of Fooday Dishes</h2>
+            <button class="btn-light btn button-custom animated" data-animation-in="fadeInUp">Our menu</button>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="slide__img">
+          <img src="" alt="" data-lazy="https://images.unsplash.com/photo-1550461716-dbf266b2a8a7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" class="full-image animated" data-animation-in="zoomOutImage"/>
+        </div>
+        <div class="slide__content slide__content__right">
+          <div class="slide__content--headings text-right">
+            <p class="animated top-title" data-animation-in="fadeInLeft" data-delay-in="0.2">Wish you have good food at our restaurant</p>
+             <h2 class="animated title" data-animation-in="fadeInLeft">Experience the food</h2>
+             <button class="btn-success btn button-custom animated text-white" data-animation-in="fadeInUp">Order Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="slide__img">
+          <img src="" alt="" data-lazy="https://images.unsplash.com/photo-1502741126161-b048400d085d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" class="full-image animated" data-animation-in="zoomInImage"/>
+        </div>
+        <div class="slide__content slide__content__left">
+          <div class="slide__content--headings text-left">
+            <p class="animated top-title" data-animation-in="fadeInRight" data-delay-in="0.2">Purchase today. just $76</p>
+             <h2 class="animated title" data-animation-in="fadeInRight">SUPER DEAL LUNCH</h2>
+             <button class="btn-light btn button-custom animated" data-animation-in="fadeInUp">Today's Menu</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="44px" height="44px" id="circle" fill="none" stroke="currentColor">
+          <circle r="20" cy="22" cx="22" id="test">
+      </symbol>
+  </svg>
+  </section>
+  <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js'></script>
+  <script src='https://alexandrebuffet.fr/codepen/slider/slick-animation.min.js'></script><script  src="./script.js"></script>
+  
+  
+  
+  
+  
+  
+  
+  </body>
+  
+  <script>
+    /*
+  ** With Slick Slider Plugin : https://github.com/marvinhuebner/slick-animation
+  ** And Slick Animation Plugin : https://github.com/marvinhuebner/slick-animation
+  */
+  
+  // Init slick slider + animation
+  $('.slider').slick({
+    autoplay: true,
+    speed: 800,
+    lazyLoad: 'progressive',
+    arrows: true,
+    fade: true,
+    dots: false,
+    prevArrow: '<div class="slick-nav prev-arrow"><i></i><svg><use xlink:href="#circle"></svg></div>',
+    nextArrow: '<div class="slick-nav next-arrow"><i></i><svg><use xlink:href="#circle"></svg></div>',
+  }).slickAnimation();
+  
+  
+  
+  $('.slick-nav').on('click touch', function(e) {
+  
+      e.preventDefault();
+  
+      var arrow = $(this);
+  
+      if(!arrow.hasClass('animate')) {
+          arrow.addClass('animate');
+          setTimeout(() => {
+              arrow.removeClass('animate');
+          }, 1600);
+      }
+  
+  });
+  </script>
 
-    <img src="img/buy.png" alt="">ç
-
-    <h1>LEARN MORE ABOUT THE CRYPTOCURRENCY SECTOR</h1>
-
-    <p>Rich Wolf Club has the advice of multiple expert investors in the cryptocurrency sector, all holders of at least one Rich Wolf will have access to both a private channel in which everyone can comment on any related project in the investment sector and request the opinion of the rest of investors and experts.
-      <br></br>
-      In addition to access to a course and a collection of books on the crypto sector, with which you can learn to study projects, read a graph and much more.
-      </p>
-
-
-  <h1>RECEIVE PASSIVE EARNINGS</h1>
-
-  <p>Rich Wolf Club is not just another NFT project, RWC will become the # 1 company in creating 3D models for skin.
-<br></br>
-    RWC will help new projects to launch their supported collection of 3D models so that each owner can have the skin of their favorite NFT within their preferred metaverse, we will also create the 3D models of projects already launched successfully.
-    <br></br>
-    All the holders of a Rich Wolf will receive a percentage of the net profits of the company on a quarterly basis, the holders of the collection will receive 30% of the profits to be distributed among the 9999 Rich Wolf, in such a way that the holders of the project will not They need to sell their assets to benefit economically and thus increase the collection's ground price.</p>
-  </div>
-
-
+  
 
 
   <!-- FAQS -->
@@ -494,12 +568,13 @@ function toggleAcc() {
     <div class="footer__text">
       <h1>RICH WOLF CLUB</h1>
       <img src="img/nft__footer.png" alt="">
+     <div class="footer__icons">
+        <li><a href="" class="pcw_pcw"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        <li><a href=""><ion-icon name="logo-twitter"></ion-icon></a></li>
+     </div>
       <p>All Rights Reserved © 2022</p>
     </div>
-    <div class="footer__icons">
-      <a href="" class="pcw_pcw"><ion-icon name="logo-instagram"></ion-icon></a>
-      <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
-    </div>
+
 
 </div>
 
