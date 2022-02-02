@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rich Wolf Club</title>
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="css/">
+    <link rel="stylesheet" href="css/">
+    <link rel="stylesheet" href="css/">
+
+    <!-- JS SETTINGS -->
+    <script src="js/counterdown_clock.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/load.js"></script>
+
+    <!-- FONT STYLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- ANIMATION CONFIG-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css'><link rel="stylesheet" href="">
+	<link rel="stylesheet" href="css/style.css">
+    
+
+
+<style>
+
+.slider {
+	background-color: #111;
+	padding-bottom: 200px;
+	padding-top: 200px;
+}
+
+.slider img {
+	display: block;
+	margin: 0 auto;
+}
+
+#slider_2 {display: none; font-family: 'Poppins', sans-serif; }
+
+.slider__1 img {
+	height: 600px;
+}
+
+.slider__1 {
+	display: flex;
+	margin: 0 500px;
+	margin-top: 50px;
+	margin-bottom: 80px;
+}
+
+.slider__1--txt {
+	margin-top: 200px;
+}
+
+.slider__1--txt h1 {
+	font-weight: 800;	
+	margin-bottom: 20px;
+	font-size: 5rem;
+	text-align: left;
+	color: rgb(224, 224, 224);
+}
+
+.slider__1--txt p {
+	font-weight: 500;
+	font-size: 1.7rem;
+	color: rgb(144, 146, 148);
+	word-spacing: 1px;
+    line-height: 26px;
+}
+
+
+
+/* SLIDER 2 */
+
+.slider__2 img {
+	height: 600px;
+}
+
+.slider__2 {
+	display: flex;
+	margin: 0 500px;
+	margin-top: 50px;
+	margin-bottom: 80px;
+}
+
+.slider__2--txt {
+	margin-top: 150px;
+}
+
+.slider__2--txt h1 {
+	font-weight: 800;	
+	margin-bottom: 20px;
+	font-size: 5rem;
+	text-align: left;
+	color: rgb(224, 224, 224);
+}
+
+.slider__2--txt p {
+	font-weight: 500;
+	font-size: 1.7rem;
+	color: rgb(144, 146, 148);
+	word-spacing: 1px;
+    line-height: 26px;
+}
+
+/* BOTONES */
+
+.slider .botones_section {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  min-height: 150px;
+  background: #111111;
+}
+
+.slider .botones_section button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: inherit;
+  font-family: inherit;
+  height: 80px;
+  width: 200px;
+}
+.slider .botones_section button.learn-more {
+  font-weight: 700;
+  color: #382b22;
+  text-transform: uppercase;
+  padding: 1em 2em;
+  background: #e6e4e4;
+  border: 1px solid #3f3f3f;
+  border-radius: 4px;
+  transform-style: preserve-3d;
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+.slider .botones_section button.learn-more::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #3f3f3f;
+  border-radius: inherit;
+  box-shadow: 0 0 0 2px #3f3f3f, 0 0.625em 0 0 #0f0f0f;
+  transform: translate3d(-5px, -3px, -1em);
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+.slider .botones_section button.learn-more:hover {
+  background: #ffe9e9;
+  transform: translate(0, 0.25em);
+}
+.slider .botones_section button.learn-more:hover::before {
+  box-shadow: 0 0 0 2px #3f3f3f, 0 0.5em 0 0 #0f0f0f;
+  transform: translate3d(-5px, -3px, -1em);
+}
+.slider .botones_section button.learn-more:active {
+  background: #ffe9e9;
+  transform: translate(0em, 0.75em);
+}
+.slider .botones_section button.learn-more:active::before {
+  box-shadow: 0 0 0 2px #3f3f3f, 0 0 w;
+  transform: translate3d(0, 0, -5em);
+}
+
+.slider .boton_1 { margin-right: 100px;}
+.slider .botones_section {margin-left: 500px; margin-top: -80px;}
+
+
+</style>
+
+</head>
+
+<body>
+	
+	<div class="slider">
+
+		<img src="img/buy.png" alt="roadmap">
+	  
+		<div id="slider_1"> 
+			<div class="slider__1">
+				<img src="img/nft__footer.png" alt="">
+				<div class="slider__1--txt">
+					<h1>LEARN MORE ABOUT THE CRYPTOCURRENCY SECTOR</h1>
+					<p>Rich Wolf Club has the advice of multiple expert investors in the cryptocurrency sector, all holders of at least one Rich Wolf will have access to both a private channel in which everyone can comment on any related project in the investment sector and request the opinion of the rest of investors and experts.
+						<br></br>
+						In addition to access to a course and a collection of books on the crypto sector, with which you can learn to study projects, read a graph and much more.
+					</p>
+				</div>
+			</div>
+		</div>
+	  
+		
+	  
+		<div id="slider_2"> 
+			<div class="slider__2">
+				<img src="img/nft.png" alt="">
+				<div class="slider__2--txt">
+					<h1>RECEIVE PASSIVE EARNINGS</h1>
+					<p>Rich Wolf Club is not just another NFT project, RWC will become the # 1 company in creating 3D models for skin.
+						<br></br>
+						RWC will help new projects to launch their supported collection of 3D models so that each owner can have the skin of their favorite NFT within their preferred metaverse, we will also create the 3D models of projects already launched successfully.
+						<br></br>
+						All the holders of a Rich Wolf will receive a percentage of the net profits of the company on a quarterly basis, the holders of the collection will receive 30% of the profits to be distributed among the 9999 Rich Wolf, in such a way that the holders of the project will not They need to sell their assets to benefit economically and thus increase the collection's ground price.
+					</p>
+				</div>
+			</div>
+		</div>
+
+	  <div class="botones_section">
+		<button id="premioboton" class="boton_1 learn-more" onclick="mostrarslider_1();">Previous</button>
+		<button id="ocultarpremioboton " class="boton_2 learn-more" href="javascript:void(0);" onclick="ocultarslider_1();">Next</button>
+	  </div>
+	  
+	  <script> 
+	  
+		function mostrarslider_1() {
+		  document.getElementById('slider_1').style.display = 'block';
+		  document.getElementById('slider_2').style.display = 'none';
+		  document.getElementById('mostrarpremioboton').style.backgroundImage = 'url()';
+		  document.getElementById('ocultarpremioboton').style.backgroundImage = 'url()';
+	  
+		}
+	  
+		function ocultarslider_1() {
+		  document.getElementById('slider_1').style.display = 'none';
+		  document.getElementById('slider_2').style.display = 'block';
+		  document.getElementById('mostrarpremioboton').style.backgroundImage = 'url(/img/)';
+		  document.getElementById('ocultarpremioboton').style.backgroundImage = 'url(/img/)';
+	  
+		}
+	  
+	  </script>
+	  
+
+
+
+</body>
+
+</html>
